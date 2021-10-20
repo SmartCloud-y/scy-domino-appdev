@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form alias="jvmpolicy"
+  comment="A fragment of JVM Java Security Policy to be loaded"
+  name="Java Policy fragment" publicaccess="false"
+  renderpassthrough="true" xmlns="http://www.lotus.com/dxl">
+  <body>
+    <richtext>
+      <pardef id="1"/>
+      <par def="1"/>
+      <par def="1"/>
+      <table columnspacing="0.0785in" refwidth="7.3229in"
+        rowspacing="0.0785in" widthtype="fitmargins">
+        <tablecolumn width="1.5750in"/>
+        <tablecolumn width="100%"/>
+        <tablerow>
+          <tablecell>
+            <pardef id="2" keeptogether="true" keepwithnext="true"/>
+            <par def="2">
+              <run>
+                <font style="bold"/>Fragment description</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <pardef id="3" keeptogether="true" keepwithnext="true"/>
+            <par def="3">
+              <field kind="editable" name="javaPolicyFragmentName" type="text"/>
+              <compositedata afterbegincount="3" aftercontainercount="1"
+                afterparcount="7" containertype="65418" nexttype="222"
+                prevtype="65418" type="98">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <run>
+                <font style="bold"/>Enabled</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <field borderstyle="none" kind="editable"
+                lookupaddressonrefresh="false" lookupeachchar="false"
+                name="javaPolicyFragementStatus" type="keyword">
+                <keywords columns="2" helperbutton="false" ui="radiobutton">
+                  <textlist>
+                    <text>Yes|Y</text>
+                    <text>No|N</text>
+                  </textlist>
+                </keywords>
+              </field>
+            </par>
+          </tablecell>
+        </tablerow>
+        <tablerow>
+          <tablecell>
+            <par def="2">
+              <run>
+                <font style="bold"/>Policy for servers</run>
+            </par>
+          </tablecell>
+          <tablecell>
+            <par def="3">
+              <field allowmultivalues="true" kind="editable"
+                listdisplayseparator="comma" listinputseparators="comma"
+                name="javaPolicyTargetServers" type="names"/> (work in progress, list of servers where the policy will be used)</par>
+          </tablecell>
+        </tablerow>
+      </table>
+      <par def="1">
+        <run>
+          <font style="bold"/>
+        </run>
+      </par>
+      <par def="1">
+        <run>
+          <font style="bold"/>Policy fragment</run>
+      </par>
+      <table bgcolor="#efefef" colorstyle="solid"
+        columnspacing="0.0785in" refwidth="7.3229in"
+        rowspacing="0.0785in" widthtype="fitmargins">
+        <tablecolumn width="100%"/>
+        <tablerow>
+          <tablecell>
+            <pardef id="4" keeptogether="true" keepwithnext="true"/>
+            <par def="4">
+              <field kind="editable" name="javaPolicyFragmentBody" type="text"/>
+              <compositedata afterbegincount="3" aftercontainercount="1"
+                afterparcount="7" containertype="65418" nexttype="222"
+                prevtype="65418" type="98">
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata>
+            </par>
+          </tablecell>
+        </tablerow>
+      </table>
+      <par def="1"/>
+    </richtext>
+  </body>
+</form>

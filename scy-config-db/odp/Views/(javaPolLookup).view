@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view allowcustomizations="false" allownewdocuments="false"
+  bgcolor="white" boldunreadrows="false" evaluateactions="false"
+  extendlastcolumn="false" headerbgcolor="white" headerlinecount="1"
+  headers="beveled" hidemarginborder="false" marginbgcolor="white"
+  marginwidth="0px" name="(javaPolLookup)" noreplace="true"
+  onopengoto="lastopened" onrefresh="displayindicator"
+  opencollapsed="false" publicaccess="false" rowlinecount="1"
+  rowspacing="1" showhierarchies="false" showinmenu="false"
+  showmargin="true" showresponsehierarchy="true" shrinkrows="false"
+  totalscolor="black" uniquekeys="false" unreadcolor="black"
+  unreadmarks="none" xmlns="http://www.lotus.com/dxl">
+  <code event="selection">
+    <formula>SELECT (Form = "jvmpolicy")</formula>
+  </code>
+  <actionbar bgcolor="#f0f0f0" bordercolor="black">
+    <actionbuttonstyle bgcolor="#f0f0f0"/>
+    <font color="system"/>
+    <border style="solid" width="0px 0px 1px"/>
+    <action showinbar="false" systemcommand="categorize" title="Categori_ze"/>
+    <action showinbar="false" systemcommand="edit" title="_Edit Document"/>
+    <action showinbar="false" systemcommand="send" title="_Send Document"/>
+    <action showinbar="false" systemcommand="forward" title="_Forward"/>
+    <action showinbar="false" systemcommand="movetofolder" title="_Move To Folder..."/>
+    <action showinbar="false" systemcommand="removefromfolder" title="_Remove From Folder"/>
+    <action showinbar="false" systemcommand="markread" title="_Read"/>
+    <action showinbar="false" systemcommand="markunread" title="_Unread"/>
+    <action showinbar="false" systemcommand="openinnewwindow" title="_Open in New Window"/>
+    <action showinbar="false" systemcommand="print" title="_Print..."/>
+    <action showinbar="false" systemcommand="delete" title="_Delete"/>
+    <action showinbar="false" systemcommand="properties" title="_Document Properties"/>
+    <action showinbar="false" systemcommand="cut" title="C_ut"/>
+    <action showinbar="false" systemcommand="copy" title="_Copy"/>
+    <action showinbar="false" systemcommand="copyasdoclink" title="Copy as Document _Link"/>
+    <action showinbar="false" systemcommand="copyastable" title="Copy as _Table"/>
+    <action showinbar="false" systemcommand="paste" title="P_aste"/>
+    <action showinbar="false" systemcommand="open" title="_Open"/>
+    <action showinbar="false" systemcommand="bookmark" title="Bookmark"/>
+  </actionbar>
+  <column hidedetailrows="false" itemname="javaPolicyFragementStatus"
+    resizable="false" separatemultiplevalues="false" showaslinks="false"
+    sort="ascending" sortnoaccent="false" sortnocase="true" width="6">
+    <columnheader title="Enabled">
+      <font size="9pt" style="bold"/>
+    </columnheader>
+  </column>
+  <column hidedetailrows="false" itemname="javaPolicyFragmentName"
+    resizable="true" separatemultiplevalues="false" showaslinks="false"
+    sort="ascending" sortnoaccent="false" sortnocase="true" width="14.6250">
+    <columnheader title="Name">
+      <font size="9pt" style="bold"/>
+    </columnheader>
+  </column>
+  <column extwindowwidth="true" hidedetailrows="false"
+    itemname="javaPolicyFragmentBody" resizable="false"
+    separatemultiplevalues="false" showaslinks="false"
+    sortnoaccent="true" sortnocase="true" width="10">
+    <columnheader title="Policy">
+      <font size="9pt" style="bold"/>
+    </columnheader>
+  </column>
+</view>

@@ -1,0 +1,103 @@
+<!--
+
+    Copyright © Oct 1, 2021 Factor-y S.r.l. (daniele.vistalli@factor-y.com)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cloud_y.domino</groupId>
+	<artifactId>scy-domino-appdev</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<surefire.version>2.22.1</surefire.version>
+	</properties>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>artifactory.openntf.org</id>
+			<name>artifactory.openntf.org</name>
+			<url>https://artifactory.openntf.org/openntf</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>4.1</version>
+				<configuration>
+					<properties>
+						<owner>Factor-y S.r.l.</owner>
+						<email>daniele.vistalli@factor-y.com</email>
+					</properties>
+					<licenseSets>
+						<licenseSet>
+							<header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+							<excludes>
+								<exclude>**/README</exclude>
+								<exclude>src/test/resources/**</exclude>
+								<exclude>src/main/resources/**</exclude>
+                                <exclude>odp/**</exclude>
+							</excludes>
+						</licenseSet>
+					</licenseSets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${surefire.version}</version>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>scy-dominoext</module>
+		<module>scy-config-db</module>
+	</modules>
+	<name>SmartCloud-y Domino AppDev Toolkit</name>
+	<url>https://github.com/SmartCloud-y/scy-domino-appdev</url>
+	<description>A set of libraries, tools and system extensions that improve developer's productivity when building high value solutions on the HCL Domino &amp; Notes application platform.</description>
+	<inceptionYear>Oct 1, 2021</inceptionYear>
+	<organization>
+		<name>Factor-y S.r.l.</name>
+		<url>https://www.factor-y.com</url>
+	</organization>
+	<scm>
+		<url>https://github.com/SmartCloud-y/scy-domino-appdev</url>
+		<connection>scm:git:ssh://github.com:SmartCloud-y/scy-domino-appdev.git</connection>
+		<developerConnection>scm:git:ssh://github.com:SmartCloud-y/scy-domino-appdev.git</developerConnection>
+	</scm>
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/SmartCloud-y/scy-domino-appdev/issues</url>
+	</issueManagement>
+</project>
